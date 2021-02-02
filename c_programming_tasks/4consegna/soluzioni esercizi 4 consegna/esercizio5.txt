@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int numero, nprimo = 0, divisore, num = 1, z;   //num e z sono due contatori
+
+    printf("Inserisci un numero intero positivo diverso da zero: ");
+    scanf("%d", &numero);
+
+    //controllo che il numero sia positivo e diverso da zero
+    while (numero <= 0) {
+        printf("Inserisci un numero intero positivo diverso da zero: ");
+        scanf("%d", &numero);
+    }
+
+    printf("I primi %d numeri primi sono: \n", numero);
+
+    //inizio un ciclo che incrementi i numeri primi fino al numero inserito
+    while(nprimo < numero) { 
+        num++;
+        divisore = 0;  //ogni volta devo azzerare il divisore altrimenti il ciclo si fermerebbe dopo il primo 
+
+        /*il ciclo for analizza tutti i numeri finchè il ciclo while non è verificato.
+        incremento i divisori dei numeri e, se ne hanno solo due (quindi 1 e sè stessi, condizione per essere primi) li stampo
+        */
+        for (z = 1; z <= num; z++) {
+            if (num % z == 0) { //se il resto tra num e z è zero, x è un divisore di numero.
+                divisore = divisore + 1;
+            }
+        }
+        if ( divisore == 2 )
+        {
+            printf ("%d \n", num );
+            nprimo++;
+        } 
+    }
+
+    system("pause");
+    return 0;
+}

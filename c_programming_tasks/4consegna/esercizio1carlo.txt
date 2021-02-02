@@ -1,0 +1,31 @@
+﻿Istruzioni e dati:
+Ogni programma altro non è che una messa in opera di un algoritmo tramite un linguaggio
+ di programmazione noto per fare in modo di poter dialogare e mandare ordini alla macchina o pc.
+Un algoritmo è un procedimento risolutivo che deve venire tradotto in un linguaggio comprensibile
+ al calcolatore, infatti viene trasformato in programma tramite il linguaggio di programmazione.
+Viene codificato in un linguaggio assemblativo e successivamente in linguaggio macchina, il famoso
+ codice binario, una seria infinita di 0 e 1, gli unici che il calcolatore riesce a comprendere a causa della
+ sua natura fisica. Dunque lo scopo principale del programma è quello di permettere appunto di inviare istruzioni
+ al calcolatore per fargli elaborare dati e quindi restituire risultati sottoforma di altri dati.
+Per questo non importa tanto il sapere un linguaggio di programmazione tanto quanto saper sviluppare
+ un algoritmo: quest'ultimo è la base logica, quello da cui si parte, il quale poi bisogna tradurlo tramite
+ i vari linguaggi. Istruzioni e dati solo legati e pur indicando due cose completamente diverse, essi sono
+ fondamentali l'uno per l'altro, altrimenti non funzionerebbero o non avrebbero senso. Tramite le istruzioni
+ noi abbiamo la possibilità di risolvere problemi ma questo avviene poiche c'è una manipolazione di dati e quindi
+ questi ultimi sono necessari per lo svolgimento di qualsiasi programma. I dati allo stesso tempo non esisterebbero
+ se non esistessero istruzioni in grado di scriverli o di leggerli. I dati possono solo essere
+ immagazzinati, letti (quindi non modificati) e scritti (modificati/sostituiti) mentre le istruzioni
+ sono propriamente i comandi che ci permettono di memorizzarli o di modificarli a nostro piacimento.
+Esempi sono la ram, la quale immagazzina i dati temporanei, li mantiene per il riutilizzo e qui tramite
+ istruzioni vengono modificati continuamente ed è questo che permette sostanzialmente ad un programma di
+ funzionare. Un altro esempio sono le variabili: vengono immagazzinate in un dato ma vengono modificate
+ di continuo da serie di istruzioni..
+ I dati vengono immagazzinati nei supporti di memorizzazione i quali
+ ognuno ha dei vantaggi e svantaggi, possono essere hhd/ssd per grandi dimensioni, cd/dvd usb/floppy ecc ecc.
+I dati vengono immagazzinati in maniera sequenziale, ovvero se immaginiamo un nastro strotolato ogni file viene
+ posto uno di fianco all'altro in ordine e non in maniera casuale e disordinata. In questo modo si fa si che un
+ file posto prima di un altro file non è in grado di riconoscere un file posto dopo di lui, ma solo quelli prima.
+Questo è un punto fondamentale poichè spesso in programmazione basta indicare una cella iniziale di memoria per poi
+ poter leggere in sequenza tutte quelle dopo, oppure bisogna stare attenti a porre una funzione nel  giusto ordine
+ rispetto alle altre, altrimenti si incombe nell'errore che variabili o altro non vengono riconosciute in quanto la
+ funzione è posta dopo o prima a seconda dei casi e quindi non viene "vista" dalle altre. 

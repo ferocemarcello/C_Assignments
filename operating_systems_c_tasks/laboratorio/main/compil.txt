@@ -1,0 +1,1 @@
+gcc quadrato.o dimezza.o main.c -o main.exe -lm

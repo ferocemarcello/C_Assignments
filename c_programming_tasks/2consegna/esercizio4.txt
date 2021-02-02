@@ -1,0 +1,70 @@
+MARCELLO FEROCE primo anno ingegneria e scienze informatiche
+L'architettura di Von Neumann è l'architettura di un calcolatore/elaboratore vista dal punto di vista "logico".
+Nell'architettura di Von Neumann dati di input vengono trasformati in dati di output attraverso l'esecuzione di un programma.
+si necessita anche di una memoria in cui il programma ed i dati intermedi dei calcoli vengano memorizzati, ed un agente che esegua le azioni programmate.
+Ogni macchina di Von Neumann(un computer/elaboratore/calcolatore basato sull'architettura di Von Neumann) ha bisogno di unità fisiche per soddisfare i processi che deve compiere.
+Ci sono quindi unità di input, unità di output, unità centrale di elaborazione(Central Process Unit, CPU), memoria,e bus. La CPU a sua volta è formata dall'unità di controllo, e dall'unità logico-aritmetica.
+Le istruzioni per i programmi sono codificate in binario. Le istruzioni possono essere di elaborazione, o di trasferimento. L'esecuzione di un programma ha queste caratteristiche:
+Dati ed istruzioni sono memorizzati in una memoria unica che permette sia la scrittura che la lettura; i contenuti della memoria sono indirizzati in base alla loro posizione, indipendentemente dal tipo di dato o istruzione contenuto; le istruzioni vengono eseguite in modo sequenziale.
+La macchina di Von Neumann funziona seguendo un ciclo:
+1-fetch: La CPU estrae le informazioni dalla memoria principale
+2-decode: Decodifica delle informazioni al fine di di conoscere l'opearazione da eseguire ed i suoi operandi
+3-execute: Esecuzione del codice binario
+Per consentire un’efficiente esecuzione del programma, la memoria che contiene dati e istruzioni dovrebbe essere veloce quanto la CPU e dovrebbe avere dimensioni sufficienti a contenere sia il programma che i dati.
+Inoltre, dovrebbe assicurare una memorizzazione persistente. Per ovviare a queste necessità(velocità, dimensioni sufficientemente grandi, persistenza della memoria) si è scelto di formare le macchine Von Neumann di una memoria centrale e di una memoria di massa.
+La memoria centrale ha un'alta velocità di accesso. Memorizza programmi e dati in esecuzioni, ed è di supporto alla CPU. La memoria è però volatile(non persistente) e di dimensioni relativamente ridotte. inoltre la memoria centrale ha un costo importante.
+La memoria di massa ha dimensioni molto grandi; memorizza i dati in modo persistente e non ha un costo proibitivo.
+Il modulo di memoria(una scheda i cui componenti sono i chip di memoria) ha quattro livelli:
+1-Registri, (interni alla CPU) capaci di memorizzare parole singole - Tipicamente dati “in transito” relativi ad un particolare dato o istruzione in esecuzione.
+2-Memoria cache (integrata nella CPU) - Area di memoria ad accesso rapido finalizzata a contenere istruzioni e dati usati più frequentemente.
+3-Memoria centrale o primaria (esterna alla CPU ma interna al calcolatore) - Contiene istruzioni e dati del programma in esecuzione.
+4-Memoria secondaria (esterna al calcolatore) - Fa parte dei moduli periferici.
+
+ogni unità elementare di memoria contiene un’informazione di tipo binario: 1 oppure 0. L'unità di misura di memoria più piccola è il bit.
+La memoria centrale è organizzata come una sequenza di celle o parole. La parola di memoria è la più piccola quantità di memoria accessibile. Tutte le celle di un elaboratore hanno dimensione uguale. Ogni cella ha un suo indirizzo, che indica la sua posizione relativa alla prima cella, che ha indirizzo 0.
+Il registro degli indirizzi(MAR) indirizza la memoria. La dimensione del MAR influenza il numero di celle utilizzabili. Il numero delle celle indirizzabili corrisponde infatti a 2 elevato alla dimensione in bit del MAR.
+Alla memoria centrale si accede tramite le linee dei bus:
+Degli indirizzi-trasferisce gli indirizzi delle celle cui si vuole accedere.
+Dei dati- sul quale vengo trasmessi i dati.
+Di controllo- specifica il tipo di operazione richiesta.
+Per effettuare le operazioni di lettura o scrittura sulla memoria centrale e necessario utilizzare il registro dei dati(MDR) che possiede la stessa dimensione della parola e che viene utilizzato per contenere il dato letto/scritto.
+La lettura di una locazione di memoria consiste nel trasferimento fisico dei byte che costituiscono la locazione dalla memoria alla unità centrale di processo, senza modificare la locazione di memoria.
+Una operazione di lettura consiste nei seguenti passi:
+1-si scrive sul MAR l'indirizzo della locazione da leggere,
+2-questo poi viene trasferito al bus degli indirizzi che trasporta l'indirizzo in memoria,
+3-la quale scrive a sua volta sul bus dei dati il contenuto della locazione di memoria selezionata,
+4-che successivamente viene inserita o caricata (load) nel registro dei dati (MDR Memory Data Register) restando così disponibile alla CPU.
+La scrittura in una locazione di memoria consiste nel trasferimento fisico del contenuto del registro dei dati (MDR) nella cella di memoria selezionata tramite il registro MAR.
+Una operazione di scrittura consiste nei seguenti passi:
+1-si scrive sul registro MDR il dato da inserire o immagazzinare (store),
+2-si scrive sul MAR l'indirizzo della locazione da ricoprire (con il dato contenuto nel registro MDR),
+3-questo poi viene trasferito al bus che trasporta l'indirizzo in memoria,
+4-la quale scrive il dato che arriva dal bus dati nella locazione di memoria selezionata.
+La memoria centrale ha una velocità di accesso molto alta(decine di ns), un tempo di accesso indipendente dalla posizione del dato nella memoria, e una memoria che oltre ad essere di dimensioni limitate(alcuni GB), è volatile.
+La memoria ROM(Read Only Memory) è una memoria di sola lettura, preimpostata dal fabbricante, di fatto RAM(poiche anche ad essa vi si può accedere specificando un indirizzo) tranne per il fatto di essere volatile. La ROM è infatti persistente. Tipicamente contengono le istruzioni per l'avvio del calcolatore.
+Il bus di sistema è costituito da un insieme di connessioni lungo le quali viene trasferita l’informazione. Esso collega fra di loro l’unità di elaborazione, la memoria e le diverse interfacce di ingresso e di uscita.
+Nelle implementazioni concrete il bus di sistema è costituito da tre parti distinte:
+implementazioni concrete il bus di sistema è costituito da tre parti distinte:
+1-Una mono-direzionale dal processore alla memoria detta bus degli indirizzi.
+2-Una bi-direzionale dal processore alla memoria e viceversa detta bus dei dati. Trasferisce dati dall’unità master all’unità slave o viceversa.
+3-Una bi-didirezionale dal processore alle altre unità funzionali e viceversa detto bus dei controlli. Trasferisce un codice corrispondente alla istruzione da eseguire dall’unità master all’unità slave e informazioni relative all’avvenuto espletamento dell’operazione richiesta in flusso contrario.
+L'unità centrale di elaborazione (CPU) è la parte del sistema che contiene gli elementi circuitali necessari al funzionamento dell’elaboratore.
+La CPU si compone di:
+1-una unità di controllo (CU Control Unit), che ha lo scopo di interpretare e attivare le risorse necessarie alla esecuzione delle istruzioni.
+2-una unità aritmetico-logica (ALU Arithmetic and Logic Unit) in cui vengono effettuati i calcoli aritmetici e logici presenti nelle istruzioni (aritmetiche/logiche) del programma.
+3-alcuni dispositivi di memoria detti registri che possono essere letti e scritti molto velocemente e che sono utilizzabili per memorizzare risultati parziali delle operazioni e informazioni necessarie al controllo del flusso del programma.
+4-l’orologio di sistema (clock) che sincronizza le operazioni rispetto ad una data frequenza.
+Altri registri presenti nella CPU sono:
+1-il contatore di programma (PC Program Counter) ha la funzione di guidare il flusso della esecuzione di un programma, infatti il suo contenuto indica l'indirizzo della prossima istruzione da eseguire.
+2-il registro della istruzione corrente (IR Instruction Register) che contiene l'istruzione da decodificare e eseguire.
+3-il registro delle interruzioni (INTR Interrupt Register) che contiene informazioni sullo stato di funzionamento delle periferiche.
+Le interfacce di ingresso/uscita costituiscono gli elementi circuitali che consentono il collegamento dell’elaboratore con le varie periferiche. Esse tra loro sono molto diverse ma possiamo raggrupparle in tre categorie:
+1-Unità di interazione. Permettono all’utente di interagire con il sistema di calcolo (tastiera, mouse, scanner, stampanti, video, webcam).
+2-Unità di memorizzazione. Memorizzano in modo permanente le informazioni in esso contenute ed è per questo che vengono chiamate anche memorie permanenti (HD, CD, DVD, Floppy, ecc…).
+3-Unità di comunicazione. Permettono di collegare sistemi di calcolo diversi in modo da realizzare una rete (modem, schede di rete).
+Una interfaccia generica potrebbe contenere i seguenti elementi:
+1-Un registro dati per scambiare dati con la periferica sia in ingresso che in uscita (PDR Peripherical Data Register).
+2-Un registro comando per contenere il comando che la periferica dovrà eseguire (PCR Peripherical Command Register).
+3-Un registro di stato della periferica (PSR Peripherical Status Register).
+
+Sapendo gia che il processo di analisi è molto più importante di quello di implementazione, conoscere il funzionamento dell'architettura di Von Neumann si rivela utile, per sapere il rendimento dell'algoritmo, in base alle prestazioni della CPU(di cui si è parlato a lungo sopra) e alle dimensioni della memoria centrale o della singola cella.

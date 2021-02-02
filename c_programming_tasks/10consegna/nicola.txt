@@ -1,0 +1,35 @@
+non ho guardato le funzioni cancella
+Nella funzione main non dovrebbero esserci operazioni come "Cella*T=NULL"... Queste operazioni dovrebbero essere gestite dalle funzioni! (Ricorda poi che quelle funzioni dovranno essere in un file separato... ma questo lo sai)
+Non hai controllato il valore di ritorno  della scanf! L'utente può digitare "cavallo" e il programma lo accetta senza storie...
+Nicola Cielo Lugaresi Secci
+30/11/2014 12.25
+Nicola Cielo Lugaresi Secci
+inserisci_in_testa e inserisci_in_coda devono entrambe ricevere come parametri tutti e due i puntatori, C e T! Esempio: se devo inserire in testa un valore e la lista è vuota non devo modificare solo il puntatore T, ma anche il C (perché non esisteva prima un ultimo elemento). Stesso discorso per inserisci_in_coda. Quindi in fondo a inserisci_in_testa aggiungi:
+if (*C==NULL) *C=nuovo;
+e in fondo a inserisci_in_coda aggiungi
+if (*T==NULL) *T=nuovo;
+Nicola Cielo Lugaresi Secci
+30/11/2014 12.25
+Nicola Cielo Lugaresi Secci
+noltre: in inserisci_in_coda tu sai già che il puntatore next della nuova cella punterà a null (proprio perché in coda). Quindi puoi semplificare in
+nuovo->next=NULL
+Però devi anche modificare il puntatore precedente
+Quindi le ultime righe della funzione inserisci_in_coda diventano qualcosa come
+if (*C==NULL) *T=nuovo;
+else (*C)->next=nuovo;
+*C=nuovo;
+nuovo->valore=valore;
+nuovo->next=NULL;
+Nicola Cielo Lugaresi Secci
+30/11/2014 12.26
+Nicola Cielo Lugaresi Secci
+Altra cosa: in stampa non hai bisogno di allocare dello spazio, non hai bisogno di ricevere come parametro il puntatore C (visto che in ogni caso puoi solo scorrere la lista in avanti, ossia da T). Quindi
+void stampa(struct Cella*T){
+	struct Cella*tmp=T;
+	while(tmp!=NULL){
+		printf("%d\t",tmp->valore);
+		tmp=tmp->next;}}
+Nicola Cielo Lugaresi Secci
+30/11/2014 12.26
+Nicola Cielo Lugaresi Secci
+Infine... Nella funzione main hai richiamato due volte inserisci_in_testa, non hai mai usato inserisci_in_coda!

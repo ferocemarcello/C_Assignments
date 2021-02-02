@@ -1,0 +1,6 @@
+#define CIAO(punt) if(!(punt=(int32_t*)malloc(10*sizeof(int32_t))))  \
+	punt=NULL;  \
+		else  \
+		for(i=0;i<10;i++) \
+		*(punt+i)= (-1000+i); \
+/*#define CIAO(punt) if(!(punt=(int32_t*)malloc(10*sizeof(int32_t)))) punt=NULL; else for(i=0;i<10;i++)	*(punt+i)= (-1000+i);*/

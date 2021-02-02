@@ -1,0 +1,16 @@
+I dati possono essere dichiarati nel programma come costanti, o come variabili.
+In quest'ultimo caso i dati vengono dichiarati insieme alla loro tipologia(es: int num;).
+Le costanti vengono dichiarate fuori dal main e da qualsiasi altra funzione; il loro scope è tutto il programma.
+Le variabili vengono dichiarate in una funzione del programma(anche il main è una funzione del programma); 
+il loro scope è la funzione in cui sono state dichiarate.
+E' importante il tipo della variabile, perchè il risultato di una funzione dipende dal tipo di variabile assegnata 
+come argomento. Inoltre ci sono funzioni che lavorano solo con un determinato tipo di variabile.
+Inoltre ad ogni variabile corrisponde un determinato range di valori che può assumere e uno spazio sulla memoria 
+del sistema.
+E' importante quindi conoscere i tipi delle variabili utilizzabili per riuscire ad avere un algoritmo più efficiente 
+nelle prestazioni, e/o più versatile sul controllo dell'utente(meno rigido, che può supportare più valori e/o tipi 
+di variabili).
+Ogni istruzione supporta certi tipi di dato e occupa un certo spazio di memoria. Per ogni istruzione è necessario 
+conoscere i dati necessari a realizzare l'istruzione(es: int a;int b; int c; a=b+c;).
+I dati delle istruzioni vengono memorizzati sul registro dati(MDR) che possiede la dimensione della parola della 
+memoria centrale, e contiene i dati per le operazioni di lettura e scrittura.

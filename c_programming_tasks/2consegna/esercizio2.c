@@ -1,0 +1,141 @@
+//Marcello Feroce primo anno ingegneria e scienze informatiche matricola 0000730777 esercizio3
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	int a1=1;//dichiarazione della variabile
+	int a2=1;//dichiarazione della variabile
+	int a3=1;//dichiarazione della variabile
+	int a4=1;//dichiarazione della variabile
+	int b1=1;//dichiarazione della variabile
+	int b2=1;//dichiarazione della variabile
+	int b3=1;//dichiarazione della variabile
+	int b4=1;//dichiarazione della variabile
+	int c1=1;//dichiarazione della variabile
+	int c2=1;//dichiarazione della variabile
+	int c3=1;//dichiarazione della variabile
+	int c4=1;//dichiarazione della variabile
+	int d1=1;//dichiarazione della variabile
+	int d2=1;//dichiarazione della variabile
+	int d3=1;//dichiarazione della variabile
+	int d4=1;//dichiarazione della variabile
+	int e1=1;//dichiarazione della variabile
+	int e2=1;//dichiarazione della variabile
+	int e3=1;//dichiarazione della variabile
+	int e4=1;//dichiarazione della variabile
+	int f1=1;//dichiarazione della variabile
+	int f2=1;//dichiarazione della variabile
+	int f3=1;//dichiarazione della variabile
+	int f4=1;//dichiarazione della variabile
+	int g1=1;//dichiarazione della variabile
+	int g2=1;//dichiarazione della variabile
+	int g3=1;//dichiarazione della variabile
+	int g4=1;//dichiarazione della variabile
+	int h1=1;//dichiarazione della variabile
+	int h2=1;//dichiarazione della variabile
+	int h3=1;//dichiarazione della variabile
+	int h4=1;//dichiarazione della variabile
+	int i1=1;//dichiarazione della variabile
+	int i2=1;//dichiarazione della variabile
+	int i3=1;//dichiarazione della variabile
+	int i4=1;//dichiarazione della variabile
+	int j1=1;//dichiarazione della variabile
+	int j2=1;//dichiarazione della variabile
+	int j3=1;//dichiarazione della variabile
+	int j4=1;//dichiarazione della variabile
+	int k1=1;//dichiarazione della variabile
+	int k2=1;//dichiarazione della variabile
+	int k3=1;//dichiarazione della variabile
+	int k4=1;//dichiarazione della variabile
+	int l1=1;//dichiarazione della variabile
+	int l2=1;//dichiarazione della variabile
+	int l3=1;//dichiarazione della variabile
+	int l4=1;//dichiarazione della variabile
+	int m1=1;//dichiarazione della variabile
+	int m2=1;//dichiarazione della variabile
+	int m3=1;//dichiarazione della variabile
+	int m4=1;//dichiarazione della variabile
+	int n1=1;//dichiarazione della variabile
+	int n2=1;//dichiarazione della variabile
+	int n3=1;//dichiarazione della variabile
+	int n4=1;//dichiarazione della variabile
+	int o1=1;//dichiarazione della variabile
+	int o2=1;//dichiarazione della variabile
+	int o3=1;//dichiarazione della variabile
+	int o4=1;//dichiarazione della variabile
+	int p1=1;//dichiarazione della variabile
+	int p2=1;//dichiarazione della variabile
+	int p3=1;//dichiarazione della variabile
+	int p4=1;//dichiarazione della variabile
+	printf("a1 %d\ta2 %d\ta3 %d\ta4 %d\tb1 %d\tb2 %d\tb3 %d\tb4 %d\tc1 %d\tc2 %d\tc3 %d\tc4 %d\td1 %d\td2 %d\td3 %d\td4 %d\te1 %d\te2 %d\te3 %d\te4 %d\tf1 %d\tg2 %d\tg3 %d\tg4 %d\th1 %d\th2 %d\th3 %d\th4 %d\ti1 %d\ti2 %d\ti3 %d\ti4 %d\tj1 %d\tj2 %d\tj3 %d\tj4 %d\tk1 %d\tk2 %d\tk3 %d\tk4 %d\tl1 %d\tl2 %d\tl3 %d\tl4 %d\tm1 %d\tm2 %d\tm3 %d\tm4 %d\tn1 %d\tn2 %d\tn3 %d\tn4 %d\to1 %d\to2 %d\to3 %d\to4 %d\tp1 %d\tp2 %d\tp3 %d\tp4 %d",a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4,e1,e2,e3,e4,f1,f2,f3,f4,g1,g2,g3,g4,h1,h2,h3,h4,i1,i2,i3,i4,j1,j2,j3,j4,k1,k2,k3,k4,l1,l2,l3,l4,m1,m2,m3,m4,n1,n2,n3,n4,o1,o2,o3,o4,p1,p2,p3,p4);
+	a1=++a1;
+	a2=++b1;
+	a3=++c1;
+	a4=++d1;
+	b1=b1++;
+	b2=c1++;
+	b3=d1++;
+	b4=e1++;
+	c1=--c1;
+	c2=--d1;
+	c3=--e1;
+	c4=--f1;
+	d1=d1--;
+	d2=e1--;
+	d3=f1--;
+	d4=g1--;
+	e1=-e1;
+	e2=-f1;
+	e3=-g1;
+	e4=-h1;
+	f1=4+5;
+	f2=5+6;
+	f3=6+7;
+	f4=7+8;
+	g1=8-9;
+	g2=9-10;
+	g3=10-11;
+	g4=11-12;
+	h1=4*5;
+	h2=5*4;
+	h3=6*5;
+	h4=7*6;
+	i1=4/5;
+	i2=5/6;
+	i3=6/7;
+	i4=7/8;
+	j1=4%5;
+	j2=5%6;
+	j3=6%7;
+	j4=7%8;
+	k1=d1;
+	k2=e1;
+	k3=f1;
+	k4=g1;
+	l1+=3;
+	l2+=5;
+	l3+=6;
+	l4+=7;
+	m1-=4;
+	m2-=5;
+	m3-=6;
+	m4-=7;
+	n1*=8;
+	n2*=6;
+	n3*=5;
+	n4*=4;
+	o1/=6;
+	o2/=4;
+	o3/=3;
+	o4/=7;
+	p1%=9;
+	p2%=5;
+	p3%=6;
+	p4%=7;
+	puts("");
+	puts("");
+	puts("");
+	printf("a1 %d\ta2 %d\ta3 %d\ta4 %d\tb1 %d\tb2 %d\tb3 %d\tb4 %d\tc1 %d\tc2 %d\tc3 %d\tc4 %d\td1 %d\td2 %d\td3 %d\td4 %d\te1 %d\te2 %d\te3 %d\te4 %d\tf1 %d\tg2 %d\tg3 %d\tg4 %d\th1 %d\th2 %d\th3 %d\th4 %d\ti1 %d\ti2 %d\ti3 %d\ti4 %d\tj1 %d\tj2 %d\tj3 %d\tj4 %d\tk1 %d\tk2 %d\tk3 %d\tk4 %d\tl1 %d\tl2 %d\tl3 %d\tl4 %d\tm1 %d\tm2 %d\tm3 %d\tm4 %d\tn1 %d\tn2 %d\tn3 %d\tn4 %d\to1 %d\to2 %d\to3 %d\to4 %d\tp1 %d\tp2 %d\tp3 %d\tp4 %d",a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4,e1,e2,e3,e4,f1,f2,f3,f4,g1,g2,g3,g4,h1,h2,h3,h4,i1,i2,i3,i4,j1,j2,j3,j4,k1,k2,k3,k4,l1,l2,l3,l4,m1,m2,m3,m4,n1,n2,n3,n4,o1,o2,o3,o4,p1,p2,p3,p4);
+	return 0;
+}

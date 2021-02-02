@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int numero, x;
+    float num;
+    
+    printf("Inserisci un numero intero: ");
+    scanf("%d", &numero);
+
+    //controllo che il numero inseerito sia positivo
+    while (numero < 0) {
+        printf("Inserisci un numero positivo: ");
+        scanf("%d", &numero);
+    }
+
+    /*utilizzo la variabile num pari alla metà del numero inserito perchè 
+    tutti i divisori di un numero, a parte sè stesso, sono compresi nella sua prima metà*/
+    num = numero/2; 
+
+    if (numero == 0)
+        printf("Impossibile");
+    else
+    printf("Il numero e\' divisibile per: \n");    
+     
+    x = 1;
+
+    while(x <= num) { 
+        if (numero%x == 0)    //se il resto tra numero e x è zero, x è un divisore di numero.
+            printf("%d \n", x++);
+        else 
+            x++; //incremento la x per il ciclo successivo
+    }
+    
+    //stampo numero perchè è sempre un divisore di sè stesso
+    printf("%d \n", numero);
+
+    system("pause");
+    return 0;
+}

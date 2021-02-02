@@ -1,0 +1,26 @@
+Un programma è un'esecuzione di un codice, scritto in un determinato linguaggio, con una sua particolare sintassi, che seguendo un algoritmo, porta alla risoluzione di uno specifico problema.
+L'utente non è però spesso capace di scrivere il codice in linguaggio macchina, e di mandarlo in esecuzione.
+Vengono usati infatti linguaggi di programmazione, che permettono ad ogni utente che ne conosca la sintassi, di scrivere 
+programmi, che eseguiti da un particolare programma, detto compilatore, portino alla soluzione del problema.
+Il compilatore infatti trasforma un linguaggio di programmazione particolare in linguaggio macchina, e lo esegue.
+Il linguaggio macchina è costituito soli elementi di codice binario, una sequenza di 0 e 1, che corrispondono rispettivamente a segnali di buio e luce.
+Il programma quindi deve trasmettere dati ed istruzioni al calcolatore e, dopo l'elaborazione del calcolatore, restituire dati.
+E' perciò importante avere le capacità per poter sviluppare l'algoritmo risolvente, o meglio ancora, il miglior algoritmo 
+risolvente, quello che permette migliori prestazioni alla macchina. I dati sono la base di qualsiasi programma, e possono essere di diverso tipo.
+Le istruzioni spiegano al programma in quale modo elaborare i dati. I dati sono necessari per le istruzioni; così come le istruzioni sono necessarie per i dati.
+Ad esempio nella memoria RAM(random access memory), una memoria volatile ad accesso casuale di lettura/scrittura dati, vengono memorizzati dati temporanei che 
+permettono, tramite istruzioni, l'esecuzione di un programma. Particolari dati sono le variabili, che a differenza delle costanti, possono essere modificati nel valore da istruzioni.
+Inoltre ad ogni variabile corrisponde un determinato range di valori che può assumere e uno spazio sulla memoria del sistema.
+E' importante quindi conoscere i tipi delle variabili utilizzabili per riuscire ad avere un algoritmo più efficiente 
+nelle prestazioni, e/o più versatile sul controllo dell'utente(meno rigido, che può supportare più valori e/o tipi 
+di variabili).
+Ogni istruzione supporta certi tipi di dato e occupa un certo spazio di memoria. Per ogni istruzione è necessario 
+conoscere i dati necessari a realizzare l'istruzione(es: int a;int b; int c; a=b+c;).
+I dati delle istruzioni vengono memorizzati sul registro dati(MDR) che possiede la dimensione della parola della 
+memoria centrale, e contiene i dati per le operazioni di lettura e scrittura.
+I dati possono essere immagazzinati in vari supporti di memorizzazione, come dischi magnetici(hard disk, floppy disk), dischi ottici(cd, dvd), nastri magnetici, memorie flash(usb),etc.
+Se per esempio immagazzinati su nastro magnetico la loro memorizzazione e il loro accesso sono di tipo sequenziale, se invece su flash drive, ad accesso casuale.
+Con memorizzazione sequenziale si intende che i dati sono immagazzinati all'interno di una precisa sequenza e che per poter accedere ad un dato in 
+una particolare posizione bisogna leggere tutti i dati che lo precedono.
+E' importante questo in programmazione perchè spesso bisogna fare attenzione nel porre una funzione in ordine corretto rispetto alle altre.
+Può infatti accadere che l'ordine errato di una funzione(un'istruzione al programma) comprometta il giusto funzionamento del programma, o anche l'esecuzione stessa.

@@ -1,0 +1,24 @@
+Quarta settimana
+Esercizio 1: Descrivere, nella maniera più accurata possibile, il rapporto fra dati e istruzioni e la rappresentazione fisica degli stessi nel calcolatore
+    Eleonora Guidi 
+    Mat:0000691977
+
+Innanzi tutto quando si parla di dati nei programmi in C si tratta o di costanti o di variabili.
+Mentre le costanti sono introdotte dalla direttiva al preprocessore “define” e non hanno tipo, per le variabili occorre dichiararlo. 
+La dichiarazione del tipo è piuttosto importante, anche se in C non c’è un forte controllo su di esso, perché ci consente di:
+-	Capire che tipo di codifica/decodifica utilizzare
+-	Capire quanta memoria serve per contenere l’informazione
+-	Capire quali operatori sono utilizzabili correttamente 
+Infatti non è necessariamente vero che un’istruzione che vale per una variabile int o char, valga anche per una variabile float o double.
+Per esempio il costrutto iterativo switch funziona solo con variabili di tipo numerabile, quindi int e char e non con numeri reali (double e float) o con strutture come stringhe e vettori.
+Inoltre anche l’istruzione di salto continue non è utilizzabile con lo switch. 
+Una delle questioni più importanti inerenti alla dichiarazione del tipo è la quantità di memoria che il sistema operativo deve riservare al programma. 
+Per esempio, nel caso di una variabile semplice, il sistema operativo riserverà 1 byte nel caso in cui la variabile sia char, 4 byte nel caso in cui siano int o float e 8 byte nel caso in cui siano double (prendendo in considerazione solo i tipi base).
+Se poi il programma necessita di strutture più complesse, il sistema operativo avrà nuovamente bisogno di sapere quanta memoria riservare ad ognuna di essa. 
+Ad esempio per quanto riguarda una array di 4 interi, il sistema operativo avrà bisogno di riservargli 16 byte (4 byte per ogni intero) uno di seguito all’altro. 
+Per quanto riguarda le istruzioni il sistema operativo deve tenere in considerazioni anche i dati necessari a completare l'istruzione stessa. 
+Per questo motivo deve riservare uno spazio di memoria sufficiente ad ospitare sia l'istruzione che i dati relativi.
+Per esempio nel caso di un'istruzione come il costrutto logico "and" il sistema operativo deve anche prendere in considerazione i dati da mettere in relazione. Utilizzando invece un'istruzione come la somma, oltre all'istruzione stessa e ai due operandi occorre riservare un indirizzo di memoria anche per il risultato.
+Durante l'esecuzione delle istruzioni i risultati parziali sono spesso memorizzati sui registri, particolari strutture di memoria adibite alla memorizzazione di singole word.
+Fisicamente i dati sono salvati all’interno della memoria centrale RAM attraverso impulsi elettrici. Una caduta di tensione, cioè lo spegnimento dell’elaboratore, ne causa la perdita. 
+Per conservarli permanentemente occorre salvarli su memorie secondarie.
