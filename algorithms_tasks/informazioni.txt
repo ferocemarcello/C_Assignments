@@ -1,0 +1,5 @@
+modalità d'esame: progetto
+	progetto base: accesso all'esame
+	progetto avanzato: max +3 all'esame
+progetti consegnati prima dello scritto, almeno una settimana prima.
+si può lavorare in gruppi di 2 o 3 persone
